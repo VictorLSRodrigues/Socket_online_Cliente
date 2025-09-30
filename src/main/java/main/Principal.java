@@ -4,7 +4,7 @@ import java.io.*;
 import javax.swing.*;
 
 public class Principal {
-
+//
     public static void main(String args[]) {
         try {
             Socket servidor = new Socket("localhost", 4444);//endereco e porta
