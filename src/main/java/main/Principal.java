@@ -2,12 +2,14 @@ package main;
 import java.net.*;
 import java.io.*;
 import javax.swing.*;
+import java.util.Scanner;
 
 public class Principal {
-//
+
     public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
         try {
-            Socket servidor = new Socket("localhost", 4444);//endereco e porta
+            Socket servidor = new Socket(sc.next(), 4444);//endereco e porta
             PrintWriter out = new PrintWriter(
                     servidor.getOutputStream(), true);
             String mensagem = "";
